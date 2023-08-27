@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "API design to collect student and teacher information",
   "main": "server.js",
+  "engines": {
+    "node": ">=14 <15"
+  },
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js"
