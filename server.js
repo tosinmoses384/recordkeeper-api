@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 require('dotenv').config();
 const port = process.env.PORT || 4000;
 const connectDB = require('./config/db');
@@ -6,6 +7,9 @@ const connectDB = require('./config/db');
 connectDB();
 
 const app = express();
+
+// Enable CORS for all routes
+app.use(cors());
 
 // Body parser middleware
 app.use(express.json());
